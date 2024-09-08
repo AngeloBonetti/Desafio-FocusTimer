@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./image/icontimer.png" type="image/x-icon">
+    <title>Focus Timer</title>
+</head>
+<body>
+    <audio src="./sound/alarme.mp3" id="alarme" loop></audio>
+    <div class="container">
+        <div class="timer">
+            <span id="timer-minuto" >
+                00
+            </span>
+            <span>:</span>
+            <span id="timer-segundo">
+                00
+            </span>
+        </div>
+        <div class="container-botao-timer">
+            <button class="botao-timer play">
+                <img src="./image/play.svg" alt="Botão de iniciar - play">
+            </button>
+            <button class="botao-timer stop">
+                <img src="./image/stop.svg" alt="Botão de parar - stop">
+            </button>
+            <button class="botao-timer mais">
+                <img src="./image/+.svg" alt="Botap adicionar mais 5 minutos">
+            </button>
+            <button class="botao-timer menos">
+                <img src="./image/-.svg" alt="Botão diminuir 5 minutos">
+            </button>
+        </div>
+    </div>
+    <div class="container container-botao-som">
+        <button class="botao-som floresta">
+            <img src="./image/icone-floresta.svg" alt="Botão som de floresta">
+            <audio id="musica-floresta" src="./sound/Floresta.wav" loop></audio>
+        </button>
+        <button class="botao-som chuva">
+            <img src="./image/icone-chuva.svg" alt="">    
+            <audio id="musica-chuva" src="./sound/Chuva.wav" loop></audio>            
+        </button>
+        <button class="botao-som cafeteria">
+            <img src="./image/icone-cafeteria.svg" alt="Botão som ambiente para uma cafeteria">
+            <audio id="musica-cafeteria" src="./sound/Cafeteria.wav" loop></audio>
+        </button>
+        <button class="botao-som lareira">
+            <img src="./image/icone-lareira.svg" alt="Botão som de uma lareira">
+            <audio id="musica-lareira" src="./sound/Lareira.wav" loop></audio>
+        </button>
+    </div>
+    <script type="module" src="./FocusTimer/main.js"></script>
+</body>
+</html>

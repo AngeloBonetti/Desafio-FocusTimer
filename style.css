@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  } */
+
+:root{
+    font-size: 62.5%;
+    --cor-color-black: #323238;
+    --cor-button: #E1E1E6;
+    --cor-button-ativo: #02799D;
+    --cor-button-click: #f2f2f5; 
+}
+
+button{
+    cursor: pointer;
+}
+
+body{
+    display: flex;
+    gap: 19.2rem;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    width: 34rem;
+}
+
+.timer{
+    display: flex;
+}
+
+span{
+    font-size: 12.6rem;
+    font-family:"Roboto", sans-serif;
+    font-weight: 500;
+    color: var(--cor-color-black);
+}
+
+.container-botao-timer{
+    display: flex;
+    gap: 4rem;
+}
+
+.botao-timer{
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+    width: 4.8rem;
+}
+
+.container-botao-som{
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    gap: 3.2rem;
+    justify-items: center;
+    width: 30.8rem;
+    
+}
+
+.container-botao-som button:hover{
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.432);
+}
+
+.container-botao-som button:active{
+    box-shadow: none;
+}
+
+.botao-som{
+    border: none;
+    border-radius: 2.4rem;
+    padding: 4rem;
+    width: 14.8rem;
+    background-color: var(--cor-button);
+}
+
+
+button.escutando{
+    background-color:var(--cor-button-ativo);
+}
+
+.escutando img{
+    filter: brightness(10);
+}
