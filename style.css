@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,19 +10,19 @@
     font-style: normal;
   } */
 
-:root{
+:root {
     font-size: 62.5%;
     --cor-color-black: #323238;
     --cor-button: #E1E1E6;
     --cor-button-ativo: #02799D;
-    --cor-button-click: #f2f2f5; 
+    --cor-button-click: #f2f2f5;
 }
 
-button{
+button {
     cursor: pointer;
 }
 
-body{
+body {
     display: flex;
     gap: 19.2rem;
     justify-content: center;
@@ -30,51 +30,53 @@ body{
     height: 100vh;
 }
 
-.container{
+.container {
     width: 34rem;
 }
 
-.timer{
+.timer {
     display: flex;
+    justify-content: center;  
 }
 
-span{
+span {
     font-size: 12.6rem;
-    font-family:"Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     color: var(--cor-color-black);
 }
 
-.container-botao-timer{
+.container-botao-timer {
     display: flex;
     gap: 4rem;
+    justify-content: center;
+    border-radius: 50% ;
 }
 
-.botao-timer{
+.botao-timer {
     border: none;
     background-color: transparent;
-    border-radius: 50%;
     width: 4.8rem;
 }
 
-.container-botao-som{
+.container-botao-som {
     display: grid;
-    grid-template-columns:  1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 3.2rem;
     justify-items: center;
     width: 30.8rem;
-    
+
 }
 
-.container-botao-som button:hover{
+.container-botao-som button:hover {
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.432);
 }
 
-.container-botao-som button:active{
+.container-botao-som button:active {
     box-shadow: none;
 }
 
-.botao-som{
+.botao-som {
     border: none;
     border-radius: 2.4rem;
     padding: 4rem;
@@ -83,10 +85,44 @@ span{
 }
 
 
-button.escutando{
-    background-color:var(--cor-button-ativo);
+button.escutando {
+    background-color: var(--cor-button-ativo);
 }
 
-.escutando img{
+.escutando img {
     filter: brightness(10);
+}
+
+@media (max-width: 900px) {
+    body {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    span{
+        font-size: 10rem;
+    }
+
+    .container-botao-timer{
+        gap: 2rem;
+    }
+    
+    .botao-timer img{
+        width: 3rem;
+    }
+    .container-botao-som {
+        margin: 0;
+        gap: 2rem;
+        justify-content: center;
+        width: 10rem;
+    }
+    .botao-som {
+        padding: 1rem;
+        width: 12rem;
+        padding: 2rem;
+    
+    }
+    .botao-som img{
+        width: 3rem;
+    }
 }
